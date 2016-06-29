@@ -1,0 +1,7 @@
+<div class="form-group">
+  <%= form.label :release_number_strategy, class: "col-lg-2 control-label" %>
+  <div class="col-lg-4">
+    <%= form.select :release_number_strategy, options_for_select([['Default', 'default'],['Read from Buildkite CI', 'buildkite']], :selected => form.object.release_number_strategy ), class: "form-control" %>
+    <p class="help-block">Set the release numbering strategy. Default uses basic incremeting, starting from 1. Reading from CI will use the build number from incoming webhooks from the chosen CI.</p>
+  </div>
+</div>
