@@ -1,9 +1,10 @@
+require 'minitest'
+require 'minitest/autorun'
+
 # Configure Rails Environment
 ENV["RAILS_ENV"] = "test"
 
-ActiveRecord::Migrator.migrations_paths = [File.expand_path("../../test/dummy/db/migrate", __FILE__)]
-ActiveRecord::Migrator.migrations_paths << File.expand_path('../../db/migrate', __FILE__)
-require "rails/test_help"
+load "#{File.dirname(__FILE__)}/../lib/samson_release_number_from_ci/buildkite_release_generator.rb"
 
 # Filter out Minitest backtrace while allowing backtrace from other libraries
 # to be shown.

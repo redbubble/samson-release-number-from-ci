@@ -1,5 +1,10 @@
 module SamsonReleaseNumberFromCi
   class Engine < Rails::Engine
+    config.to_prepare do
+      Dir["#{File.dirname(__FILE__)}/../../app/decorators/*.rb"].each do |c|
+        require_dependency(c)
+      end
+    end
   end
 end
 
