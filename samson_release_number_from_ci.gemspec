@@ -1,14 +1,14 @@
 $:.push File.expand_path("../lib", __FILE__)
 
 # Maintain your gem's version:
-require "release_number_from_ci/version"
+require "samson_release_number_from_ci/version"
 
 # Describe your gem and declare its dependencies:
 Gem::Specification.new do |s|
-  s.name        = "release_number_from_ci"
-  s.version     = ReleaseNumberFromCi::VERSION
-  s.authors     = ["andrew jones"]
-  s.email       = ["andrew@andrewjones.id.au"]
+  s.name        = "samson_release_number_from_ci"
+  s.version     = SamsonReleaseNumberFromCi::VERSION
+  s.authors     = [""]
+  s.email       = [""]
   s.homepage    = "TODO"
   s.summary     = "TODO: Summary of ReleaseNumberFromCi."
   s.description = "TODO: Description of ReleaseNumberFromCi."
