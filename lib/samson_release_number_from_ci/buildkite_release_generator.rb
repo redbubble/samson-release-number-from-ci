@@ -1,14 +1,12 @@
 module SamsonReleaseNumberFromCi
   module BuildkiteReleaseGenerator
-    def build_release_params(project, author, commit, build_param)
-      default_release_params = { commit: commit, author: author }
-
+    def build_release_params(project, build_param)
+      extra_release_params = {}
       if project.release_number_strategy == 'buildkite'
         build_number = build_param[:number]
-        default_release_params.merge(number: build_number)
-      else
-        default_release_params
+        extra_release_params = {number: build_number}
       end
+      return extra_release_params
     end
   end
 end
