@@ -2,7 +2,7 @@ PATH
   remote: .
   specs:
     samson_release_number_from_ci (0.0.1)
-      rails (~> 4.2.6)
+      rails (~> 4.2, >= 4.2.6)
 
 GEM
   remote: https://rubygems.org/
