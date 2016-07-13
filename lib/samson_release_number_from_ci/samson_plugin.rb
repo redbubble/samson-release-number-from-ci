@@ -11,7 +11,7 @@ Samson::Hooks.callback :project_permitted_params do
   [:release_number_strategy]
 end
 
-Samson::Hooks.callback :release_params do |project, build_param|
+Samson::Hooks.callback :buildkite_release_params do |project, build_param|
   include SamsonReleaseNumberFromCi::BuildkiteReleaseGenerator
   build_release_params(project, build_param).to_a
 end
