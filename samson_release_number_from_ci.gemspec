@@ -17,6 +17,6 @@ Gem::Specification.new do |s|
   s.files = Dir["{app,db,lib}/**/*", "MIT-LICENSE", "Rakefile", "README.rdoc"]
   s.test_files = Dir["test/**/*"]
 
-  s.add_runtime_dependency 'rails', '~> 4.2', '>= 4.2.6'
+  s.add_runtime_dependency 'rails', '~> 5.0'
   s.add_development_dependency "minitest", '~> 5.9.0'
 end
