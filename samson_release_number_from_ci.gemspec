@@ -18,5 +18,5 @@ Gem::Specification.new do |s|
   s.test_files = Dir["test/**/*"]
 
   s.add_runtime_dependency 'rails', '~> 5.0'
-  s.add_development_dependency "minitest", '~> 5.9.0'
+  s.add_development_dependency "minitest"
 end
